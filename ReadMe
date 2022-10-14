@@ -1,0 +1,11 @@
+@Author : Liyabona Saki
+@Descr  : Lil documentation on running the project
+@Date   : 14 Oct 2022
+
+=======================================
+Unique Policy Management System (UPMS)
+=======================================
+
+py -m venv upms            :: creating venv
+upms\Scripts\activate.bat  :: activating venv
+py manage.py runserver     :: running the project
