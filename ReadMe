@@ -6,6 +6,7 @@
 Unique Policy Management System (UPMS)
 =======================================
 
-py -m venv upms            :: creating venv
-upms\Scripts\activate.bat  :: activating venv
-py manage.py runserver     :: running the project
+py -m venv upms                 :: creating venv
+upms\Scripts\activate.bat       :: activating venv
+pip install -i requirements.txt :: installing requirements
+py manage.py runserver          :: running the project
