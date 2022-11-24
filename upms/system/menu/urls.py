@@ -1,7 +1,7 @@
-from django.urls          import path
+from django.urls                            import path
 
-from upms.system.menu.views import AdminView
+from upms.system.menu.views                 import AdminView
 
 url_patterns = [
-    path('admin/' , AdminView.as_view(),  name='admin')
+    # path('admin/' , AdminView.as_view(),  name='admin'),
 ]
