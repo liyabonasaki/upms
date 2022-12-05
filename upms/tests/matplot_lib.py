@@ -12,9 +12,9 @@ class Diagram():
         pass
 
     def data(self):
-        '''
+        """
         values can be changed based on the input provided
-        '''
+        """
         y = np.array([35, 25, 25, 15])
         labels = ["apples", "bananas", "cherries", "dates"]
 
