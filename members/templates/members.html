@@ -2,10 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
     <title>members</title>
-</head>
-<body>
-<h2>Manage Policy Members</h2>
 
+</head>
+
+<body>
+<div>
+    <h2>List of Policy Members</h2>
+</div>
+
+    <table border="" class="table table-striped table-responsive-md">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Position</th>
+                <th>Phone</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>Date Joined</th>
+            <tr/>
+        </thead>
+
+        <tbody>
+            <div>
+                {% if members %}
+                {% for x in members %}
+                <td> {{ x.title}}           </td>
+                <td> {{ x.first_name }}     </td>
+                <td> {{ x.last_name }}      </td>
+                <td> {{ x.position }}       </td>
+                <td> {{ x.phone }}          </td>
+                <td> {{ x.mobile }}         </td>
+                <td> {{ x.email1 }}         </td>
+                <td> {{ x.date_joined }}    </td>
+                <tr> {% endfor %}           </tr>
+                <tr> {% endif %}            </tr>
+            </div>
+        </tbody>
+    </table>
 </body>
+
 </html>

@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class Members(models.Model):
     # code_member = models.ForeignKey('members.Member', on_delete  = models.PROTECT, related_name = 'members')
 
@@ -12,6 +11,7 @@ class Members(models.Model):
     phone       = models.CharField('Phone'          , max_length=35            , blank=True)
     mobile      = models.CharField('Mobile'         , max_length=35            , blank=True)
     email1      = models.EmailField('Email 1'       , max_length=50            , blank=True)
+    date_joined = models.DateField(null=True)
 
     def __str__(self):
         return str(self.first_name) + '' + str(self.last_name)
