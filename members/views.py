@@ -5,6 +5,7 @@ from django.template                                           import loader
 from members.models                                            import Members
 
 
+# class PolicyMembers
 @deprecated(version='1.0', reason="moving away from this function --> due to templates")
 def policy_members(request):
     return HttpResponse("Manage Policy Members")
@@ -18,3 +19,5 @@ def policy_members(request):
         'members' : members,
     }
     return HttpResponse(template.render(context, request))
+
+# def update_members()
