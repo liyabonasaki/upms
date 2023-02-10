@@ -4,5 +4,9 @@ from .           import views
 app_name = "members"
 
 urlpatterns = [
-    path('', views.policy_members, name='policy_members'),
+
+    path('view_members/', views.policy_members, name='policy_members'),
+    # path('seearch_members/', views.policy_members, name='policy_members'),
+
+
 ]
