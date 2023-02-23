@@ -1,8 +1,7 @@
 from deprecated                                                import deprecated
-from django.shortcuts                                          import render
 from django.http                                               import HttpResponse
 from django.template                                           import loader
-from members.models                                            import Members
+from upms.members.models import Members
 
 
 # class PolicyMembers

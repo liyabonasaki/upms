@@ -1,4 +1,4 @@
-from members.models import Members
+from upms.members.models import Members
 
 members = Members.objects.all()
 

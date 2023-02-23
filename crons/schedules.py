@@ -3,7 +3,7 @@ import schedule
 import tasks
 
 
-def schedules() -> [None]:
+def schedules() -> None:
 
     """ 1 min """
     schedule.every(1).minutes.do(tasks.tasks())
