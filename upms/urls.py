@@ -5,5 +5,8 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     # path('menu/', include('upms.system.menu.urls')),
     # path('register/', include('register.urls')),
-    path('members/', include('members.urls')),
+    path('/', include('upms.authentication.urls')),
+    path('upms/members/', include('upms.members.urls')),
+    path('upms/claims/' , include('upms.claims.urls'))
+
 ]
